@@ -35,3 +35,6 @@ option.smartindent = true
 
 -- cmd height
 option.cmdheight = 0
+
+-- fill characters
+option.fillchars = { eob = " " }
