@@ -14,7 +14,6 @@ return {
 		local luasnip = require("luasnip")
 		local lspkind = require("lspkind")
 		require("luasnip.loaders.from_vscode").lazy_load()
-		--		vim.api.nvim_set_hl(0, "PMenu", { bg = "#ffffff" })
 		cmp.setup({
 			window = {
 				performance = {
