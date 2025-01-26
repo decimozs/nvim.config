@@ -5,13 +5,6 @@ local keymap = vim.keymap
 -- Nvim tree files
 keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
 
--- harpoon
-keymap.set("n", "hx", "<cmd>lua require('harpoon.mark').add_file()<cr>")
-keymap.set("n", "<tab><leader>", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>")
-keymap.set("n", "<leader>1", "<cmd>lua require('harpoon.ui').nav_next()<cr>")
-keymap.set("n", "<leader>2", "<cmd>lua require('harpoon.ui').nav_prev()<cr>")
-keymap.set("n", "ht", "<cmd>telescope harpoon marks<cr>")
-
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>")
