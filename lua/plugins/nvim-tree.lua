@@ -11,6 +11,11 @@ return {
 			renderer = {
 				root_folder_label = false,
 			},
+			actions = {
+				open_file = {
+					quit_on_open = true,
+				},
+			},
 			view = {
 				centralize_selection = false,
 				cursorline = true,
