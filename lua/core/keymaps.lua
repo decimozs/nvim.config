@@ -63,3 +63,9 @@ keymap.set("n", "<leader>jj", "<C-W>j", { desc = "move to the window on the belo
 
 -- lsp saga
 keymap.set("n", "K", "<cmd>Lspsaga hover_doc")
+
+-- mason
+keymap.set("n", "<leader>mason", "<cmd>Mason<cr>")
+
+-- lazy
+keymap.set("n", "<leader>lazy", "<cmd>Lazy<cr>")
