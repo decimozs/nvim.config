@@ -37,4 +37,4 @@ option.smartindent = true
 option.cmdheight = 0
 
 -- fill characters
-option.fillchars = { eob = " " }
+option.fillchars = { eob = " ", vert = " ", verthoriz = " " }
