@@ -30,6 +30,7 @@ return {
 				"yamlls",
 				"jsonls",
 				"dockerls",
+				"pyright",
 			},
 			automatic_installation = true,
 		})
