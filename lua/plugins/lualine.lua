@@ -32,11 +32,10 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			local lualine = require("lualine")
-			local transparent = require("transparent").clear_prefix("lualine")
 			lualine.setup({
 				options = {
 					icons_enabled = true,
-					theme = "github_dark_dimmed",
+					theme = "vesper",
 					component_separators = { left = "", right = "" },
 					section_separators = { left = "", right = "" },
 					disabled_filetypes = {
@@ -55,26 +54,17 @@ return {
 					lualine_a = {
 						{
 							mode,
-							color = {
-								fg = "#4984CD",
-							},
 						},
 					},
 					lualine_b = {
 						{
 							"branch",
-							color = {
-								fg = "#768390",
-							},
 						},
 					},
 					lualine_x = {
 						{
 							"diff",
 							"diagnostics",
-							color = {
-								fg = "#768390",
-							},
 						},
 					},
 					lualine_c = {},

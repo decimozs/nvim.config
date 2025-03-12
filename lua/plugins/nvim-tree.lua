@@ -6,7 +6,6 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
-		local transparent = require("transparent").clear_prefix("nvim-tree")
 		require("nvim-tree").setup({
 			renderer = {
 				root_folder_label = false,

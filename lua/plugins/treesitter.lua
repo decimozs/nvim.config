@@ -19,6 +19,7 @@ return {
 					"vim",
 					"vimdoc",
 				},
+
 				sync_install = true,
 				highlight = { enable = true },
 				indent = { enable = true },

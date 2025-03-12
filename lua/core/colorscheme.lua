@@ -1,16 +1,19 @@
 return {
-	"projekt0n/github-nvim-theme",
-	name = "github-theme",
-	lazy = false,
-	priority = 1000,
+	"datsfilipe/vesper.nvim",
 	config = function()
-		local colorscheme = require("github-theme")
-		colorscheme.setup({
-			options = {
-				transparent = true,
+		local vesper = require("vesper")
+		vesper.setup({
+			transparent = false, -- Boolean: Sets the background to transparent
+			italics = {
+				comments = true, -- Boolean: Italicizes comments
+				keywords = false, -- Boolean: Italicizes keywords
+				functions = true, -- Boolean: Italicizes functions
+				strings = true, -- Boolean: Italicizes strings
+				variables = false, -- Boolean: Italicizes variables
 			},
+			overrides = {}, -- A dictionary of group names, can be a function returning a dictionary or a table.
+			palette_overrides = {},
 		})
-
-		vim.cmd("colorscheme github_dark_dimmed")
+		vim.cmd.colorscheme("vesper")
 	end,
 }
