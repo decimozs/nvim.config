@@ -38,3 +38,6 @@ option.cmdheight = 0
 
 -- fill characters
 option.fillchars = { eob = " ", vert = " ", verthoriz = " " }
+
+-- status line
+option.laststatus = 3
