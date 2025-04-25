@@ -1,3 +1,3 @@
 # Neovim Config
-<img src="https://github.com/user-attachments/assets/f9fd81a8-9e95-46d7-96ba-e9fca8a17870"/>
+<img src="https://github.com/user-attachments/assets/8a5fde97-0460-4587-91aa-92a07c341f4d"/>
 
