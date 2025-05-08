@@ -41,3 +41,6 @@ option.fillchars = { eob = " ", vert = " ", verthoriz = " " }
 
 -- status line
 option.laststatus = 3
+
+-- set backup
+option.backupcopy = "yes"

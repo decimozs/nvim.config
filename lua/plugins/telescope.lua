@@ -5,7 +5,6 @@ return {
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	config = function()
 		local telescope = require("telescope")
-		local transparent = require("transparent").clear_prefix("telescope")
 		telescope.setup({
 			defaults = {
 				prompt_prefix = "   ",
