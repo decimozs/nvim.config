@@ -1,12 +1,15 @@
 return {
 	{
 		"nvim-treesitter/nvim-treesitter",
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter-textobjects",
+		},
 		build = ":TSUpdate",
 		config = function()
 			local configs = require("nvim-treesitter.configs")
 
 			configs.setup({
-				ensured_installed = {
+				ensure_installed = {
 					"lua",
 					"c",
 					"cpp",
@@ -19,10 +22,19 @@ return {
 					"vim",
 					"vimdoc",
 				},
-
 				sync_install = true,
 				highlight = { enable = true },
 				indent = { enable = true },
+				textobjects = {
+					select = {
+						enable = true,
+						lookahead = true,
+						keymaps = {
+							["af"] = "@function.outer",
+							["if"] = "@function.inner",
+						},
+					},
+				},
 			})
 		end,
 	},

@@ -62,3 +62,6 @@ keymap.set("n", "<leader>mason", "<cmd>Mason<cr>")
 
 -- lazy
 keymap.set("n", "<leader>lazy", "<cmd>Lazy<cr>")
+
+-- terminal
+keymap.set("n", "<c-T>", "<cmd>Lspsaga term_toggle<cr>")
