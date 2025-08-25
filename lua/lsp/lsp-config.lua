@@ -63,6 +63,9 @@ return {
 		lspconfig["html"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			filetypes = {
+				"php",
+			},
 		})
 
 		-- configure typescript server with plugin
@@ -108,6 +111,7 @@ return {
 				"scss",
 				"less",
 				"svelte",
+				"php",
 			},
 		})
 
@@ -132,6 +136,16 @@ return {
 		})
 
 		lspconfig["lemminx"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		lspconfig["phpactor"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		lspconfig["gopls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})

@@ -49,10 +49,10 @@ keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "Increase W
 keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "Decrease Window Width" })
 
 -- navigating window
-keymap.set("n", "<leader>ww", "<C-W>l", { desc = "move to the window on the right" })
-keymap.set("n", "<leader>qq", "<C-W>h", { desc = "move to the window on the left" })
-keymap.set("n", "<leader>kk", "<C-W>k", { desc = "move to the window on the top" })
-keymap.set("n", "<leader>jj", "<C-W>j", { desc = "move to the window on the below" })
+keymap.set("n", "<leader>rr", "<C-W>l", { desc = "move to the window on the right" })
+keymap.set("n", "<leader>ll", "<C-W>h", { desc = "move to the window on the left" })
+keymap.set("n", "<leader>tt", "<C-W>k", { desc = "move to the window on the top" })
+keymap.set("n", "<leader>bb", "<C-W>j", { desc = "move to the window on the below" })
 
 -- lsp saga
 keymap.set("n", "K", "<cmd>Lspsaga hover_doc")
@@ -64,4 +64,4 @@ keymap.set("n", "<leader>mason", "<cmd>Mason<cr>")
 keymap.set("n", "<leader>lazy", "<cmd>Lazy<cr>")
 
 -- terminal
-keymap.set("n", "<c-T>", "<cmd>Lspsaga term_toggle<cr>")
+keymap.set({ "n", "t" }, "<C-t>", "<cmd>Lspsaga term_toggle<cr>")

@@ -18,6 +18,8 @@ return {
 				lua = { "stylua" },
 				python = { "black" },
 				xml = { "xmlformatter" },
+				php = { "pretty-php" },
+				go = { "gofmt" },
 			},
 			format_on_save = {
 				lsp_fallback = true,

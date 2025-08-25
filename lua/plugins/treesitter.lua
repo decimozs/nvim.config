@@ -21,6 +21,8 @@ return {
 					"json",
 					"vim",
 					"vimdoc",
+					"php",
+					"go",
 				},
 				sync_install = true,
 				highlight = { enable = true },

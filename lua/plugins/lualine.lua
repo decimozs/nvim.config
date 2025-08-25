@@ -61,13 +61,8 @@ return {
 							"branch",
 						},
 					},
-					lualine_x = {
-						{
-							"diff",
-							"diagnostics",
-						},
-					},
 					lualine_c = {},
+					lualine_x = {},
 					lualine_z = {},
 				},
 				inactive_sections = {
@@ -81,6 +76,7 @@ return {
 				tabline = {},
 				inactive_winbar = {},
 				extensions = {
+					"nvim-tree",
 					"oil",
 					"mason",
 					"fzf",
