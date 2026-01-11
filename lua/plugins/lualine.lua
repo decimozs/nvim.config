@@ -34,7 +34,6 @@ return {
 			local lualine = require("lualine")
 			lualine.setup({
 				options = {
-					theme = "vesper",
 					icons_enabled = true,
 					component_separators = { left = "", right = "" },
 					section_separators = { left = "", right = "" },
@@ -61,7 +60,7 @@ return {
 							"branch",
 						},
 					},
-					lualine_c = {},
+					lualine_c = { "filetype", "filename" },
 					lualine_x = {},
 					lualine_z = {},
 				},

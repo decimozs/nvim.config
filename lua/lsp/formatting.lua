@@ -16,7 +16,7 @@ return {
 				json = { "prettier" },
 				yaml = { "prettier" },
 				lua = { "stylua" },
-				python = { "black" },
+				python = { "ruff_fix", "ruff_format" },
 				xml = { "xmlformatter" },
 				php = { "pretty-php" },
 				go = { "gofmt" },

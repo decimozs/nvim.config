@@ -25,7 +25,7 @@ option.backspace = "indent,eol,start"
 option.termguicolors = true
 
 -- clipboard
-option.clipboard:append("unnamedplus")
+option.clipboard = "unnamedplus"
 
 -- number width
 option.numberwidth = 5
